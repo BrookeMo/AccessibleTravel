@@ -4,6 +4,7 @@ import GoogleMapReact from 'google-map-react';
 import LocationDot from './LocationDot';
 //import GoogleIcon from './GoogleIcon';
 import CustomIcon from './CustomIcon';
+import "./custom.css";
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -24,8 +25,9 @@ class MapView extends Component {
 
   render() {
     return (
-      // Important! Always set the container height explicitly
-      <div style={{ height: '100vh', width: '100%' }}>
+      <div id="mappagediv">
+      {/* Important! Always set the container height explicitly */}
+      <div id="mapdiv" style={{ height: '75vh', width: '100%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyCu7rsf9wfUgHKspaVJ7wbXT9KQywq0ixI" }}
           defaultCenter={this.props.center}
@@ -1001,6 +1003,9 @@ class MapView extends Component {
           />
         </GoogleMapReact>
       </div>
+      <div id="mapfooter">
+      </div>
+    </div>
     );
   }
 }

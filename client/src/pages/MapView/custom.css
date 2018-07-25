@@ -1,4 +1,13 @@
-.arts {
-    height: 5px;
-    width: 5px;
-  }
+#mapdiv {
+  margin: auto;
+  border: black 10px;
+  top: 10px;
+}
+#mappagediv {
+  border: black 10px;
+  top: 10px;
+  margin: auto;
+}
+#mapfooter {
+  height: 50px;
+}
