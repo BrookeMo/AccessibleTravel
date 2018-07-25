@@ -18,11 +18,11 @@ body, html {
 }
 #mid1 {
     background-image: url('https://i.imgur.com/U7sN5C6.jpg');
-    min-height: 300px;
+    min-height: 250px;
 }
 #mid2 {
     background-image: url('https://i.imgur.com/U7sN5C6.jpg');
-    min-height: 100px;
+    min-height: 250px;
 }
 .homedescription {
     position: absolute;
