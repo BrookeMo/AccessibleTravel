@@ -1,12 +1,46 @@
-# The Fifth Element: Travel
-
+# Accessible Travel
 
 Our goal with Accessible Travel is to create safe, sensory-friendly, certified travel options for parents and individuals on the Spectrum.
-                
-Taking a vacation together, as a family, can be one of the biggest challenges of having a family member who has sensory processing complications. 
+https://accessibletravel.herokuapp.com/
 
-This site provides parents with a community to share ideas, plan trips with other families, review destinations, and explore travel options at some of the most beautiful places in the world.
+## Development Team
 
-As a parent of an individual on the spectrum you can be assured that the destinations featured on Accesible Travel have been certified or highly recommended by those in the Autism Community.
+###### Shawn Connell | Back End Developer | Mongoose & React
+https://github.com/Clickomat
 
-![Screenshot](/client/public/assets/images/screenShotReadme.PNG)
+###### Jessica Ball | Back End Developer | Mongoose & Autism Research
+https://github.com/icesmooth2010
+
+###### Kristen Yanni | Back End Developer | Google Maps API & React
+https://github.com/Krizzle27
+
+###### Brooke Mortensen | Front End Developer | Design & User Authentication
+https://github.com/BrookeMo
+
+###### Kim Howard | Front End Developer | Contact & Autism Research
+https://github.com/kimberlyhoward
+
+#### Technologies Used
+
+- React.js
+- XML
+- HTML
+- CSS
+- Materialize
+- Javascript
+- Node.js
+- jQuery
+- Google Maps API
+- MongoDB
+- Mongoose
+- JSON
+- Firebase
+
+## Pictures
+
+###### Home Page
+![Accessible Travel Home Page](./client/public/assets/images/HomePagePic.png "Accessible Travel Home Page")
+###### Login Modal
+![Accessible Travel Login Modal](./client/public/assets/images/LoginModalPic.png "Accessible Travel Login Modal")
+###### Map Page
+![Accessible Travel Map Page](./client/public/assets/images/MapPagePic.png "Accessible Travel Map Page")
