@@ -1,13 +1,8 @@
-#mapdiv {
-  margin: auto;
-  border: black 10px;
-  top: 10px;
+.gm-style img {
+  height: 35px;
+  width: 35px;
 }
-#mappagediv {
-  border: black 10px;
-  top: 10px;
-  margin: auto;
-}
-#mapfooter {
-  height: 50px;
+.gm-style {
+height: 100%;
+width: 100%;
 }

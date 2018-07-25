@@ -1,16 +1,21 @@
 .infoWindow{
     background-color: azure;
-    overflow: hidden;
-    width: 30em;
+    overflow: auto;
+    width: 10em;
     position: relative;
+    padding: 0px;
     text-align: center;
-    font-size: 0.5rem;
-    top: 1em;
-}
-.infoWindow img{
-    width: 20em;
-}
-.arts {
-    height: 5px;
-    width: 5px;
-  }
+ }
+ .infoWindow h1{
+    font-size: 15px;
+    padding: 0%;
+    text-align: center;
+ }
+ .infoWindow h2{
+    font-size: 15px;
+    padding: 0%;
+ }
+ .infoWindow img{
+    width: 100em;
+    padding: 0;
+ }
