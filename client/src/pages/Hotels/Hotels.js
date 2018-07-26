@@ -11,7 +11,7 @@ function reloadPage() {
 class Hotels extends Component {
   state = {
     hotellist: [],
-    nome: "",
+    name: "",
     location: "",
     rating: "",
     cost: "$$",
@@ -27,8 +27,7 @@ class Hotels extends Component {
       .then(res =>
         this.setState({
           hotel: res.data,
-          author:"",
-          nome: "",
+          name: "",
           location: "",
           rating: "",
           cost: "",
@@ -56,7 +55,6 @@ class Hotels extends Component {
     event.preventDefault();
     if (this.state.location && this.state.name) {
       API.saveHotel({
-        author: this.state.author,
         name: this.state.name,
         location: this.state.location,
         rating: this.state.rating,
@@ -85,6 +83,12 @@ class Hotels extends Component {
               <div className="row">
                 <div className="col s6">
                   <form onSubmit={this.handleFormSubmit}>
+                    <Input
+                      value={this.state.name}
+                      onChange={this.handleInputChange}
+                      name="name"
+                      placeholder="Name (required)"
+                    />
                     <Input
                       value={this.state.location}
                       onChange={this.handleInputChange}
