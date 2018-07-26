@@ -79,10 +79,10 @@ render (){
               <div className="col s6">
                 <form onSubmit={this.handleFormSubmit}>
                 <Input
-                      value={this.state.Name}
+                      value={this.state.author}
                       onChange={this.handleInputChange}
-                      name="name"
-                      placeholder="Name (required)"
+                      name="author"
+                      placeholder="Author (required)"
                     />
                     <Input
                       value={this.state.Location}
@@ -96,12 +96,12 @@ render (){
                       name="rating"
                       placeholder="Rating 1-5(required)"
                     />
-                    <Input
+    {/* <Input
                       value={this.state.Destination}
                       onChange={this.handleInputChange}
                       name="destination"
                       placeholder="Destination (required)"
-                    />
+                    />*/}
                     <TextArea
                       value={this.state.Review}
                       onChange={this.handleInputChange}
@@ -109,7 +109,7 @@ render (){
                       placeholder="Review (Optional)"
                     />
                     <FormBtn
-                      disabled={!(this.state.Location && this.state.Name)}
+                      disabled={!(this.state.location && this.state.author)}
                       onClick={this.handleFormSubmit}
                     >
                       Submit Review
