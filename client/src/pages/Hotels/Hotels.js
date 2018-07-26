@@ -75,42 +75,42 @@ class Hotels extends Component {
   render() {
     return (
       <main>
-        <div className="row">
-          <div className="col s12">
-            <div className="card-panel hotels">
-              <div className="row nomargin">
-                <div className="col s12">
-                  <h3 class="pagename">Hotels</h3>
-                  <hr></hr>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col s12">
-                  <div className="center-align">
-                    <a id="showAdd" className="waves-effect waves-light btn-small">Want to Submit A Hotel?</a>
-                    <a id="hideAdd" className="waves-effect waves-light btn-small">Hide 'Add A Hotel'</a>
+          <div className="row">
+            <div className="col s12">
+              <div className="card-panel hotels">
+                <div className="row nomargin">
+                  <div className="col s12">
+                    <h3 class="pagename">Hotels</h3>
+                    <hr></hr>
                   </div>
                 </div>
-                <div className="col s12 formbox">
-                  <div className="container">
-                  <form onSubmit={this.handleFormSubmit}>
-                    <div className="row">
-                    <h3 className="col s12 submittitle">Submit a Hotel</h3>
-                    <Input
-                      className="input-field col s12 l4"
-                      value={this.state.name}
-                      onChange={this.handleInputChange}
-                      name="name"
-                      placeholder="Hotel Name (required)"
-                    />
-                    <Input
-                      className="input-field col s12 l7 offset-l1"
-                      value={this.state.location}
-                      onChange={this.handleInputChange}
-                      name="location"
-                      placeholder="Address (required)"
-                    />
+                <div className="row">
+                  <div className="col s12">
+                    <div className="center-align">
+                      <a id="showAdd" className="waves-effect waves-light btn-small">Want to Submit A Hotel?</a>
+                      <a id="hideAdd" className="waves-effect waves-light btn-small">Hide 'Add A Hotel'</a>
                     </div>
+                  </div>
+                  <div className="col s12 formbox">
+                    <div className="container">
+                      <form onSubmit={this.handleFormSubmit}>
+                        <div className="row">
+                          <h3 className="col s12 submittitle">Submit a Hotel</h3>
+                            <Input
+                              className="input-field col s12 l4"
+                              value={this.state.name}
+                              onChange={this.handleInputChange}
+                              name="name"
+                              placeholder="Hotel Name (required)"
+                            />
+                            <Input
+                              className="input-field col s12 l7 offset-l1"
+                              value={this.state.location}
+                              onChange={this.handleInputChange}
+                              name="location"
+                              placeholder="Address (required)"
+                            />
+                        </div>
                     <div className="row">
                     <Input
                       className="input-field col s12 l1"
