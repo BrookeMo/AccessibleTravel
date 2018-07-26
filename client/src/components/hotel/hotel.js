@@ -31,7 +31,7 @@ componentDidMount(){
                 <p>{hotel.www}</p>
                 
                 
-                <p><h5>{"Added by " + hotel.author}</h5></p>
+                <p><h5>{"Added the " + hotel.name}</h5></p>
                 <p>{'on '+ hotel.date}</p>
 
  
