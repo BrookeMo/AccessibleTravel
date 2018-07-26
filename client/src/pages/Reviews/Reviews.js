@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import Review from "./../../components/review";
 import { Input, TextArea, FormBtn } from "../../components/Form";
-import API from './../../utils/API'
+import API from './../../utils/API';
+import $ from "jquery";
+import firebase from "firebase"
+import FBApp from "../../utils/firebase";
 
 function reloadPage()
 {
@@ -70,44 +73,61 @@ render (){
       <div className="row">
         <div className="col s12">
           <div className="card-panel hotels">
-            <div className="row">
-              <div className="col s4">
-                <h3 className="centered">Reviews</h3>
+            <div className="row nomargin">
+              <div className="col s12">
+                <h3 className="pagename">Reviews</h3>
+                <hr></hr>
               </div>
             </div>
             <div className="row">
-              <div className="col s6">
-                <form onSubmit={this.handleFormSubmit}>
-                <Input
+              <div className="col s12">
+                <div className="center-align">
+                  <a id="showADD" className="waves-effect waves-light btn-small">Want to Submit A Review?</a>
+                  <a id="hideADD" className="waves-effect waves-light btn-small">Hide 'Add A Review'</a>
+                </div>
+              </div>
+              <div className="col s12 formbox">
+                <div className="container">
+                  <form onSubmit={this.handleFormSubmit}>
+                    <div className="row">
+                    <h3 className="col s12 submittitle">Submit a Review</h3>
+                    <Input
+                      className="col s12 l3"
                       value={this.state.author}
                       onChange={this.handleInputChange}
                       name="author"
                       placeholder="Author (required)"
                     />
                     <Input
+                      className="col s12 l4 offset-l1"
                       value={this.state.Location}
                       onChange={this.handleInputChange}
                       name="location"
                       placeholder="Location (required)"
                     />
                     <Input
+                      className="col s12 l3 offset-l1"
                       value={this.state.Rating}
                       onChange={this.handleInputChange}
                       name="rating"
                       placeholder="Rating 1-5(required)"
                     />
+                    </div>
     {/* <Input
                       value={this.state.Destination}
                       onChange={this.handleInputChange}
                       name="destination"
                       placeholder="Destination (required)"
                     />*/}
+                    <div className="row">
                     <TextArea
+                      className="col s12 reviewbox"
                       value={this.state.Review}
                       onChange={this.handleInputChange}
                       name="review"
                       placeholder="Review (Optional)"
                     />
+                    </div>
                     <FormBtn
                       disabled={!(this.state.location && this.state.author)}
                       onClick={this.handleFormSubmit}
@@ -116,11 +136,14 @@ render (){
                     </FormBtn>
                   </form>
                 </div>
+              </div>
+              <div className="row">
                 <div className="col s6">
                   <p>
                     <Review />
                   </p>
                 </div>
+              </div>
             <div className="row">
               <div className="col s12">
                 <div className="container">
@@ -140,4 +163,23 @@ render (){
   );
 };
 };
+$( document ).ready(function() {
+  firebase.auth().onAuthStateChanged(firebaseUser => {
+  if (firebaseUser) { 
+    $('#showADD').click(function(){
+      $('.formbox').show();
+      $('#showADD').hide();
+      $('#hideADD').show();
+  });
+    $('#hideADD').click(function() {
+      $('.formbox').hide();
+      $('#hideADD').hide();
+      $('#showADD').show();
+  })
+}
+else {
+  $('#showAdd').addClass('disabled');
+}
+  });
+});
 export default Reviews;

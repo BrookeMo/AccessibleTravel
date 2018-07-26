@@ -68,11 +68,15 @@ render (){
         <div className="col s12">
           <div className="card-panel hotels">
             <div className="row">
-              <div className="col s4">
-                <h3>Blogs</h3>
+              <div className="col s12">
+                <h3 className="pagename">Blogs</h3>
+                <hr></hr>
               </div>
             </div>
             <div className="row">
+              <h1 className="comingsoon">Coming Soon!</h1>
+            </div>
+            {/* <div className="row">
               <div className="col s6">
                 <form onSubmit={this.handleFormSubmit}>
                   <Input
@@ -108,7 +112,7 @@ render (){
                     </div>
                   </Container>
               </div>
-            </div>
+            </div> */}
             <div className="row">
               <div className="col s12">
                 <div className="container">

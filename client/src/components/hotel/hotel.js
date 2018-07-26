@@ -23,16 +23,23 @@ componentDidMount(){
           this.state.hotelList.map(
             (hotel, i) =>
               <div className="border" key={i}>
-                <p>{hotel.name}</p>
-                <p>{hotel.location}</p>
-                <p>{hotel.rating}</p>
-                <p>{hotel.cost}</p>
-                <p>{hotel.text}</p>
-                <p>{hotel.www}</p>
-                
-                
-                <p><h5>{"Added the " + hotel.name}</h5></p>
-                <p>{'on '+ hotel.date}</p>
+                <div className="row nomargin">
+                  <h4 className="hotelName col s12">{hotel.name}</h4>
+                </div>
+                <div className="row nomargin">
+                  <h6 className="hotelAddress col s12">Address: {hotel.location}</h6>
+                </div>
+                <div className="row nomargin">
+                  <p className="hotelRating col s2">Rating: {hotel.rating}</p>
+                  <p className="hotelPrice col s2 offset-s1">Cost: {hotel.cost}</p>
+                  <a className="hotelWebsite link col s6 offset-s1">Website: {hotel.www}</a>
+                </div>
+                <div className="row nomargin">
+                  <p className="hotelDescription col s12">Description: {hotel.text}</p>
+                </div>
+                <div className="row nomargin">
+                  <p className="addedDate col">Added the {hotel.name} on {hotel.date}</p>
+                </div>
 
  
 

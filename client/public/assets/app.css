@@ -143,14 +143,47 @@ body {
     margin-top: 1.68rem;
 }
 .hotels {
-    background-color: #2D2C31;
-    opacity: .95;
-    color: white;
+    background-color: white;
+    color: #2D2C31;
     padding-top: 0;
+    opacity: .95;
+}
+.pagename {
+    font-family: 'WellBred';
+    text-align: center;
+}
+input {
+    font-family: 'Modern_Sans_Light';
+    color: grey;
+}
+.formbox {
+    background: #2D2C31;
+    display: none;
+    margin-top: 10px;
+}
+.nomargin {
+    margin: 0;
+}
+.submittitle {
+    color: grey;
+    text-align: center;
+}
+.link {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .filter {
     text-align: right;
   color: #4498C6;
+}
+.addedDate {
+    font-size: 10px;
+    color: grey;
+}
+#hideAdd {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 /* Contact Page */
 *{
@@ -223,7 +256,19 @@ body {
 .form-control {
     color: aqua;
 }
-.border{border-style: inset;
+.border{
+border-style: dotted;
 margin: 1em;
 padding: 1em;
+}
+.reviewbox {
+    font-family: 'Modern_Sans_Light';
+}
+#hideADD {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.comingsoon {
+    text-align: center;
 }
