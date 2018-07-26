@@ -39,6 +39,11 @@ body, html {
     letter-spacing: 10px;
     opacity: 1;
     margin-bottom: 10px;
+    text-shadow:
+		-1px -1px 0 white,
+		1px -1px 0 white,
+		-1px 1px 0 white,
+		1px 1px 0 white;
 }
 .maintag {
     background-color: white;
